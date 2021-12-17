@@ -165,10 +165,17 @@ a {
   font-size: 1.1rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 1.2rem 3rem;
+  outline: 0;
+  padding: 0.625rem 1.87rem;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+}
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 .btn--primary {
   background-color: var(--color-primary);
@@ -214,32 +221,32 @@ a {
   }
 }
 /* Inputs */
+
 .input {
-  border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  padding: 0.7rem 2rem;
-  outline: 0;
-  font-size: 1.5rem;
+  border: 1px solid var(--border-color);
   color: var(--color-heading);
+  font-size: 1.5rem;
+  outline: 0;
+  padding: 0.9rem 2.2rem;
 }
 ::placeholder {
   color: #cdcbd7;
 }
-
 .input-group {
-  display: flex;
-  border: 1px solid var(--border-color);
+  border: 1px solid red;
   border-radius: var(--border-radius);
+  display: flex;
 }
 .input-group .input {
-  flex-grow: 1;
   border: 0;
-  padding: 1.2rem 0.9rem;
+  flex-grow: 1;
+  padding: 1.2rem 2rem;
 }
-.input-group .btn--accent {
+.input-group .btn {
   margin: 4px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .input {
     font-size: 1.2rem;
   }
@@ -579,5 +586,27 @@ a {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+/* Domain blocks */
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 3.75rem);
+  font-size: 1.2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
   }
 }
