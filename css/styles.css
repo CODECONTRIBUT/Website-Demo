@@ -28,9 +28,10 @@ h2,
 h3 {
   color: var(--color-heading);
   margin-bottom: 0.5rem;
+  line-height: 1.1;
 }
 h1 {
-  font-size: 4.4rem;
+  font-size: 3rem;
 }
 h2 {
   font-size: 2.5rem;
@@ -553,5 +554,30 @@ a {
   }
   .nav__item {
     border: 0;
+  }
+}
+/* Heroes */
+.hero {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+.hero__tagline {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #b9c3cf;
+  margin: 1rem 0 3rem;
+}
+.hero__image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero__heading {
+    font-size: 3.6rem;
+  }
+  .hero {
+    padding-top: 0;
+  }
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
