@@ -64,7 +64,7 @@ a {
   color: var(--color-accent);
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .link-arrow::after {
   content: "-->";
@@ -632,4 +632,23 @@ a {
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+/* Features */
+.feature {
+  gap: 2.5rem 1.25rem;
+  margin: 7.5rem 0;
+}
+.feature:first-of-type {
+  margin-top: 4rem;
+}
+.feature__heading {
+  margin: 0.8rem 0;
+}
+.feature__image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
